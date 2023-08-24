@@ -8,8 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        korean: [`var(font-korean)`, 'sans-serif']
-      }
+        serif: [`var(font-serif-korean)`, 'sans-serif'],
+        sans: [`var(font-sans-korean)`, 'sans-serif'],
+      },
     },
   },
   plugins: [],
