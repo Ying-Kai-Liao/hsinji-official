@@ -5,8 +5,8 @@ import Image from "next/image"
 
 const Logo = () => {
     return (
-        <div>
-            <Image src='/logo.png' alt='LOGO.png' width={250} height={250}></Image>
+        <div className="max-w-[250px]">
+            <Image src='/LOGO.svg' alt='LOGO.svg' width={500} height={566}></Image>
         </div>
     )
 }
