@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { serifKorean, sansKorean } from "./layout";
+import { serifKorean, sansKorean } from "@/app/fonts/Fonts";
 
 export default function Home() {
   return (

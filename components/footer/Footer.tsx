@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 
 import Logo from "@/components/Logo";
-import { serifKorean } from "@/app/layout";
+import { serifKorean } from "@/app/fonts/Fonts";
 
 const Footer = () => {
   return (
