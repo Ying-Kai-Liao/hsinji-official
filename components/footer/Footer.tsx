@@ -16,13 +16,15 @@ const Footer = () => {
               <Logo />
             </Link>
           </div>
-          <div className="mb-4 px-4">
-            <h3 className={`${serifKorean.className} text-base font-semibold mb-2 text-[#4D4A47]`}>開診時間</h3>
-            <ul className="space-y-3">
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
-            </ul>
+          <div className="mb-4 px-4 w-96">
+            <h3 className={`${serifKorean.className} text-base font-semibold mb-4 text-[#4D4A47]`}>開診時間</h3>
+            <div className="grid grid-cols-3 gap-y-4">
+              <p className="text-sm font-light col-span-1">週一至週五</p>
+              <p className="text-sm font-light col-span-2">11:00-20:00<br />中午12:00-13:00休息</p>
+
+              <p className="text-sm font-light col-span-1">週六/日</p>
+              <p className="text-sm font-light col-span-2">休診</p>
+            </div>
           </div>
           <div className="mb-4 px-4">
             <h3 className={`${serifKorean.className} text-base font-semibold mb-2 text-[#4D4A47]`}>聯絡我們</h3>
