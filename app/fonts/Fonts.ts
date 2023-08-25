@@ -3,37 +3,37 @@ import localFont from 'next/font/local'
 export const serifKorean = localFont({
     src: [
       {
-        path: '@/app/fonts/Serif-Korean/extralight.otf',
+        path: './Serif-Korean/extralight.otf',
         weight: '200',
         style: 'normal',
       },
       {
-        path: '@/app/fonts/Serif-Korean/light.otf',
+        path: './Serif-Korean/light.otf',
         weight: '300',
         style: 'normal',
       },
       {
-        path: '@/app/fonts/Serif-Korean/regular.otf',
+        path: './Serif-Korean/regular.otf',
         weight: '400',
         style: 'normal',
       },
       {
-        path: '@/app/fonts/Serif-Korean/medium.otf',
+        path: './Serif-Korean/medium.otf',
         weight: '500',
         style: 'normal',
       },
       {
-        path: '@/app/fonts/Serif-Korean/semibold.otf',
+        path: './Serif-Korean/semibold.otf',
         weight: '600',
         style: 'normal',
       },
       {
-        path: '@/app/fonts/Serif-Korean/bold.otf',
+        path: './Serif-Korean/bold.otf',
         weight: '700',
         style: 'normal',
       },
       {
-        path: '@/app/fonts/Serif-Korean/heavy.otf',
+        path: './Serif-Korean/heavy.otf',
         weight: '900',
         style: 'normal',
       },
@@ -45,32 +45,32 @@ export const serifKorean = localFont({
   export const sansKorean = localFont({
     src: [
       {
-        path: '@/app/fonts/Sans-Korean/extralight.otf',
+        path: './Sans-Korean/extralight.otf',
         weight: '200',
         style: 'normal',
       },
       {
-        path: '@/app/fonts/Sans-Korean/light.otf',
+        path: './Sans-Korean/light.otf',
         weight: '300',
         style: 'normal',
       },
       {
-        path: '@/app/fonts/Sans-Korean/normal.otf',
+        path: './Sans-Korean/normal.otf',
         weight: '400',
         style: 'normal',
       },
       {
-        path: '@/app/fonts/Sans-Korean/medium.otf',
+        path: './Sans-Korean/medium.otf',
         weight: '500',
         style: 'normal',
       },
       {
-        path: '@/app/fonts/Sans-Korean/bold.otf',
+        path: './Sans-Korean/bold.otf',
         weight: '700',
         style: 'normal',
       },
       {
-        path: '@/app/fonts/Sans-Korean/heavy.otf',
+        path: './Sans-Korean/heavy.otf',
         weight: '900',
         style: 'normal',
       },
