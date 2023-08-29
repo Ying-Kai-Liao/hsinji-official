@@ -11,7 +11,7 @@ export default function Home() {
           </p>
         </div>
         <div className={`${sansKorean.className}`}>
-          <p className="text-xl py-5">
+          <p className="text-xl py-5 ">
             信基診所，帶來全新輔助療程樣貌
           </p>
         </div>
