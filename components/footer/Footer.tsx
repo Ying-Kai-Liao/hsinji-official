@@ -20,7 +20,7 @@ const Footer = () => {
         <div
           className={`flex flex-row justify-start items-start gap-4 font-extralight`}
         >
-          <div className="w-40 mr-16">
+          <div className="w-40 mr-16 ">
             <Link href={"/"}>
               <Logo />
             </Link>
