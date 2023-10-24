@@ -3,12 +3,14 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import useWindowWidth from "@/hooks/useWindowWidth";
 
 import Logo from "@/components/Logo";
-import { serifKorean } from "@/app/fonts/Fonts";
+import { serifKorean } from "@/fonts/Fonts";
 
 const Footer = () => {
   const [enlarge, setEnlarge] = useState<boolean>(false);
+  const width = useWindowWidth();
 
   const handleClick = () => {
     setEnlarge(!enlarge);
@@ -16,16 +18,18 @@ const Footer = () => {
 
   return (
     <footer className="bg-white text-[#686563] w-full">
-      <div className="container mx-auto py-20 max-w-[1170px]">
+      <div className="container mx-auto py-20 max-w-[1170px] px-4">
         <div
-          className={`flex flex-row justify-start items-start gap-4 font-extralight`}
+          className={`flex flex-row justify-center items-start gap-4 font-extralight`}
         >
-          <div className="w-40 mr-16 ">
-            <Link href={"/"}>
-              <Logo />
-            </Link>
-          </div>
-          <div className="mb-4 px-4 w-72">
+          {width > 768 && (
+            <div className="w-40 mr-16 ">
+              <Link href={"/"}>
+                <Logo />
+              </Link>
+            </div>
+          )}
+          <div className="mb-4 px-4 w-[16rem]">
             <h3
               className={`${serifKorean.className} text-base font-semibold mb-4 text-[#4D4A47]`}
             >
@@ -58,7 +62,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="underline">
-                <a href={`tel:${"0922087179"}`}>0922087179</a>
+                <a href={`tel:${"0910491915"}`}>0910491915</a>
               </li>
               <li>
                 <span>亦可於官方 LINE@留言，客服將儘速與您聯繫</span>
@@ -72,10 +76,9 @@ const Footer = () => {
               LINE 諮詢
             </h3>
             <ul className="space-y-4 text-sm font-normal">
-              <li>
-                <Link href="https://lin.ee/OqQ6VuO">
-                  掃描 QRCODE 或點此加入 LINE 線上預約
-                </Link>
+              <li className="flex flex-col">
+                <Link href="https://lin.ee/OqQ6VuO">掃描 QRCODE 或點此</Link>
+                <Link href="https://lin.ee/OqQ6VuO">加入 LINE 線上預約</Link>
               </li>
               <li onClick={handleClick}>
                 <Image
@@ -91,7 +94,10 @@ const Footer = () => {
         </div>
       </div>
       {enlarge && (
-        <div className="fixed top-0 w-screen h-screen bg-gray-300/70 flex justify-center items-center" onClick={handleClick}>
+        <div
+          className="fixed top-0 w-screen h-screen bg-gray-300/70 flex justify-center items-center"
+          onClick={handleClick}
+        >
           <Image
             src="https://qr-official.line.me/gs/M_789ngczz_BW.png?oat_content=qr"
             alt="LINE QR Code"
@@ -100,12 +106,16 @@ const Footer = () => {
           />
         </div>
       )}
-      <div className="bg-[#4d4a47] text-gray-50 text-xs py-3 font-normal">
+      <div className="bg-[#4d4a47] text-gray-50 text-xs py-3 px-3 font-normal">
         <div className="container mx-auto flex justify-between max-w-[1170px]">
           <ul className="flex space-x-6">
-            <li>Terms</li>
-            <li>Conditions</li>
-            <li>Privacy Policy</li>
+            {width > 768 && (
+              <>
+                <li>Terms</li>
+                <li>Conditions</li>
+                <li>Privacy Policy</li>
+              </>
+            )}
           </ul>
           <div className="">© Hsinji Clinic. All rights reserved.</div>
         </div>
