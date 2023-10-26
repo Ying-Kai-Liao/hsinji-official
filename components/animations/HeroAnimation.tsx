@@ -101,7 +101,7 @@ const OpeningAnimation: React.FC<OpenAnimationProps> = ({
                 className="text-4xl md:text-6xl font-bold leading-loose pl-4"
                 variants={childVariants}
               >
-                 · 生病有信基
+                   生病有信基
               </motion.p>
             </div>
             <div className={`${sansKorean.className}`}>

@@ -1,8 +1,10 @@
 import TestClient from "./TestClient";
+import Fonts from "./FontClient";
 export default function Test() {
   return (
     <main className="">
-        <TestClient />
+      <Fonts />
+        {/* <TestClient /> */}
     </main>
   );
 }
