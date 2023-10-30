@@ -81,7 +81,7 @@ const OpeningAnimation: React.FC<OpenAnimationProps> = ({
                 生命有基督 · 生病有信基
               </motion.p>
             </div>
-            <div style={{fontFamily: "'Noto Sans TC', sans-serif;"}}>
+            <div style={{fontFamily: "'Noto Sans TC', sans-serif"}}>
               <motion.p className="text-xl" variants={childVariants}>
                 喜樂的心乃是良藥
               </motion.p>
@@ -107,7 +107,7 @@ const OpeningAnimation: React.FC<OpenAnimationProps> = ({
                    生病有信基
               </motion.p>
             </div>
-            <div style={{fontFamily: "'Noto Sans TC', sans-serif;"}}>
+            <div style={{fontFamily: "'Noto Sans TC', sans-serif"}}>
               <motion.p className="text-xl" variants={childVariants}>
                 喜樂的心乃是良藥
               </motion.p>
