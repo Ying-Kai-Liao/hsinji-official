@@ -90,16 +90,17 @@ const OpeningAnimation: React.FC<OpenAnimationProps> = ({
         )}
         {width <= 768 && (
           <>
-            <div className={` mb-7`}>
+            <div 
+              style={{fontFamily: "'Noto Serif TC', serif"}}
+              className={` mb-7`}
+            >
               <motion.p
-                style={{fontFamily: "'Noto Serif TC', serif"}}
                 className="text-4xl md:text-6xl font-bold leading-loose pr-8"
                 variants={childVariants}
               >
                 生命有基督
               </motion.p>
               <motion.p
-                style={{fontFamily: "'Noto Serif TC', serif"}}
                 className="text-4xl md:text-6xl font-bold leading-loose pl-4"
                 variants={childVariants}
               >
