@@ -1,15 +1,11 @@
-import Hero from '@/components/home/Hero_old'
-import Draft from "@/components/animations/Draft";
-import Intro from "@/components/home/Intro";
-import OpeningComponent from "@/components/home/Hero"
+import HeroComponent from "@/components/home/Hero"
+import AboutComponent from "@/components/home/About";
 
 export default function Home() {
   return (
     <main className="">
-      <OpeningComponent />
-      {/* <Hero /> */}
-      {/* <Intro />
-      <Draft /> */}
+      <HeroComponent />
+      <AboutComponent />
     </main>
   );
 }

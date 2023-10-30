@@ -6,7 +6,7 @@ import Image from "next/image";
 import useWindowWidth from "@/hooks/useWindowWidth";
 
 import Logo from "@/components/Logo";
-import { serifKorean } from "@/fonts/Fonts";
+
 
 const Footer = () => {
   const [enlarge, setEnlarge] = useState<boolean>(false);
@@ -31,7 +31,8 @@ const Footer = () => {
           )}
           <div className="mb-4 px-4 w-[16rem]">
             <h3
-              className={`${serifKorean.className} text-base font-semibold mb-4 text-[#4D4A47]`}
+              style={{fontFamily: "'Noto Serif TC', serif"}}
+              className={`text-base font-semibold mb-4 text-[#4D4A47]`}
             >
               開診時間
             </h3>
@@ -49,7 +50,8 @@ const Footer = () => {
           </div>
           <div className="mb-4 px-4 ">
             <h3
-              className={`${serifKorean.className} text-base font-semibold mb-4 text-[#4D4A47]`}
+              style={{fontFamily: "'Noto Serif TC', serif"}}
+              className={`text-base font-semibold mb-4 text-[#4D4A47]`}
             >
               聯絡我們
             </h3>
@@ -71,7 +73,8 @@ const Footer = () => {
           </div>
           <div className="mb-4 px-4">
             <h3
-              className={`${serifKorean.className} text-base font-semibold mb-4 text-[#4D4A47]`}
+              style={{fontFamily: "'Noto Serif TC', serif"}}
+              className={`text-base font-semibold mb-4 text-[#4D4A47]`}
             >
               LINE 諮詢
             </h3>

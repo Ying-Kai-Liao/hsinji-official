@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import NavBar from '@/components/navbar/NavBar'
 import Footer from '@/components/footer/Footer'
-import { sansKorean } from '@/fonts/Fonts'
+import React from 'react'
 
 export const metadata: Metadata = {
   title: '信基診所',
@@ -16,11 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={sansKorean.className}>
+      <body style={{fontFamily: "'Noto Sans TC', sans-serif;"}} className={` w-full`}>
         <NavBar />
-        <div className='w-full'>
-          {children}
-        </div>
+        {children}
         <Footer />
       </body>
     </html>

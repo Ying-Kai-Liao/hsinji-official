@@ -1,11 +1,9 @@
-'use clinet'
-
-import { serifKorean } from "@/fonts/Fonts"
+'use client'
 
 export default function Fonts() {
     return (
         <>
-          <div className={`${serifKorean.className} leading-loose mt-20`}>
+          <div style={{fontFamily: "'Noto Serif TC', serif"}} className={` leading-loose mt-20 pl-[30vw]`}>
             <p className="text-4xl md:text-6xl font-black">
               Black 黑
             </p>

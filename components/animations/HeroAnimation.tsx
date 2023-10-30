@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import useWindowWidth from "@/hooks/useWindowWidth";
 import Image from "next/image";
-import { serifKorean, sansKorean } from "@/fonts/Fonts";
 
 const containerVariants = {
   hidden: {
@@ -73,15 +72,16 @@ const OpeningAnimation: React.FC<OpenAnimationProps> = ({
       >
         {width > 768 && (
           <>
-            <div className={`${serifKorean.className} mb-7`}>
+            <div className={`mb-7`}>
               <motion.p
+                style={{fontFamily: "'Noto Serif TC', serif"}}
                 className="text-4xl md:text-6xl font-bold leading-loose "
                 variants={childVariants}
               >
                 生命有基督 · 生病有信基
               </motion.p>
             </div>
-            <div className={`${sansKorean.className}`}>
+            <div style={{fontFamily: "'Noto Sans TC', sans-serif;"}}>
               <motion.p className="text-xl" variants={childVariants}>
                 喜樂的心乃是良藥
               </motion.p>
@@ -90,21 +90,23 @@ const OpeningAnimation: React.FC<OpenAnimationProps> = ({
         )}
         {width <= 768 && (
           <>
-            <div className={`${serifKorean.className} mb-7`}>
+            <div className={` mb-7`}>
               <motion.p
+                style={{fontFamily: "'Noto Serif TC', serif"}}
                 className="text-4xl md:text-6xl font-bold leading-loose pr-8"
                 variants={childVariants}
               >
                 生命有基督
               </motion.p>
               <motion.p
+                style={{fontFamily: "'Noto Serif TC', serif"}}
                 className="text-4xl md:text-6xl font-bold leading-loose pl-4"
                 variants={childVariants}
               >
                    生病有信基
               </motion.p>
             </div>
-            <div className={`${sansKorean.className}`}>
+            <div style={{fontFamily: "'Noto Sans TC', sans-serif;"}}>
               <motion.p className="text-xl" variants={childVariants}>
                 喜樂的心乃是良藥
               </motion.p>
