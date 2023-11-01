@@ -7,7 +7,6 @@ import useWindowWidth from "@/hooks/useWindowWidth";
 
 import Logo from "@/components/Logo";
 
-
 const Footer = () => {
   const [enlarge, setEnlarge] = useState<boolean>(false);
   const width = useWindowWidth();
@@ -31,7 +30,7 @@ const Footer = () => {
           )}
           <div className="mb-4 px-4 w-[16rem]">
             <h3
-              style={{fontFamily: "'Noto Serif TC', serif"}}
+              style={{ fontFamily: "'Noto Serif TC', serif" }}
               className={`text-base font-semibold mb-4 text-[#4D4A47]`}
             >
               開診時間
@@ -50,7 +49,7 @@ const Footer = () => {
           </div>
           <div className="mb-4 px-4 w-[16rem]">
             <h3
-              style={{fontFamily: "'Noto Serif TC', serif"}}
+              style={{ fontFamily: "'Noto Serif TC', serif" }}
               className={`text-base font-semibold mb-4 text-[#4D4A47]`}
             >
               聯絡我們
@@ -73,7 +72,7 @@ const Footer = () => {
           </div>
           <div className="mb-4 px-4 w-[16rem]">
             <h3
-              style={{fontFamily: "'Noto Serif TC', serif"}}
+              style={{ fontFamily: "'Noto Serif TC', serif" }}
               className={`text-base font-semibold mb-4 text-[#4D4A47]`}
             >
               LINE 諮詢
@@ -83,14 +82,26 @@ const Footer = () => {
                 <Link href="https://lin.ee/OqQ6VuO">掃描 QRCODE 或點此</Link>
                 <Link href="https://lin.ee/OqQ6VuO">加入 LINE 線上預約</Link>
               </li>
-              <li onClick={handleClick}>
-                <Image
-                  src="https://qr-official.line.me/gs/M_789ngczz_BW.png?oat_content=qr"
-                  alt="LINE QR Code"
-                  width={100}
-                  height={100}
-                />
-              </li>
+              {width > 768 && (
+                <li onClick={handleClick}>
+                  <Image
+                    src="https://qr-official.line.me/gs/M_789ngczz_BW.png?oat_content=qr"
+                    alt="LINE QR Code"
+                    width={100}
+                    height={100}
+                  />
+                </li>
+              )}
+              {width <= 768 && (
+                <Link href="https://lin.ee/OqQ6VuO">
+                  <Image
+                    src="https://qr-official.line.me/gs/M_789ngczz_BW.png?oat_content=qr"
+                    alt="LINE QR Code"
+                    width={100}
+                    height={100}
+                  />
+                </Link>
+              )}
             </ul>
           </div>
         </div>
