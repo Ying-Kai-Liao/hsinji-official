@@ -20,7 +20,7 @@ const Footer = () => {
     <footer className="bg-white text-[#686563] w-full">
       <div className="container mx-auto py-20 max-w-[1170px] px-4">
         <div
-          className={`flex flex-row justify-center items-start gap-4 font-extralight`}
+          className={`flex flex-wrap flex-row justify-center items-start gap-4 font-extralight`}
         >
           {width > 768 && (
             <div className="w-40 mr-16 ">
@@ -36,19 +36,19 @@ const Footer = () => {
             >
               開診時間
             </h3>
-            <div className="grid grid-cols-3 gap-y-4">
-              <p className="text-sm font-normal col-span-1">週一至週五</p>
-              <p className="text-sm font-normal col-span-2">
+            <div className="grid grid-cols-3 gap-y-4 text-sm font-normal">
+              <p className="col-span-1">週一至週五</p>
+              <p className="col-span-2 pl-3">
                 11:00-20:00
                 <br />
                 中午12:00-13:00休息
               </p>
 
-              <p className="text-sm font-normal col-span-1">週六/日</p>
-              <p className="text-sm font-normal col-span-2">休診</p>
+              <p className="col-span-1">週六/日</p>
+              <p className="col-span-2 pl-3">休診</p>
             </div>
           </div>
-          <div className="mb-4 px-4 ">
+          <div className="mb-4 px-4 w-[16rem]">
             <h3
               style={{fontFamily: "'Noto Serif TC', serif"}}
               className={`text-base font-semibold mb-4 text-[#4D4A47]`}
@@ -71,7 +71,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="mb-4 px-4">
+          <div className="mb-4 px-4 w-[16rem]">
             <h3
               style={{fontFamily: "'Noto Serif TC', serif"}}
               className={`text-base font-semibold mb-4 text-[#4D4A47]`}
@@ -93,7 +93,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          {/* Add more sections with links here */}
         </div>
       </div>
       {enlarge && (
