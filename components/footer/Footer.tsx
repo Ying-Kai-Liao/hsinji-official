@@ -83,7 +83,7 @@ const Footer = () => {
                 <Link href="https://lin.ee/OqQ6VuO">加入 LINE 線上預約</Link>
               </li>
               {width > 768 && (
-                <li onClick={handleClick}>
+                <li onClick={handleClick} className="cursor-pointer">
                   <Image
                     src="https://qr-official.line.me/gs/M_789ngczz_BW.png?oat_content=qr"
                     alt="LINE QR Code"

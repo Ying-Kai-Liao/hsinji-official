@@ -53,7 +53,6 @@ const OpeningAnimation: React.FC<OpenAnimationProps> = ({
       className="flex items-center justify-center flex-col md:w-full h-screen"
     >
       <div className="h-screen w-full relative">
-        <div className="bg-radial-gradient absolute w-full h-[56.3vw]"></div>
         {/* <div className="bg-white/40 absolute w-full h-[56.3vw]"></div> */}
         <Image
           src="/bg_home.jpeg"
