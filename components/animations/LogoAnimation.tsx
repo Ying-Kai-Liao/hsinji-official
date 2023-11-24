@@ -80,7 +80,7 @@ const LogoAnimation:React.FC<LogoAnimationProps> = ({ onComplete }) => {
                   x: logoState.targetPosition.x,
                   y: logoState.targetPosition.y,
                   scale: logoState.scaleValues.x,
-                  transition: { duration: 1.5 },
+                  transition: { duration: 1 },
                 }
               : "center"
           }
