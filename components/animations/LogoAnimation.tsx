@@ -80,7 +80,7 @@ const LogoAnimation:React.FC<LogoAnimationProps> = ({ onComplete }) => {
                   x: logoState.targetPosition.x,
                   y: logoState.targetPosition.y,
                   scale: logoState.scaleValues.x,
-                  transition: { duration: 1 },
+                  transition: { duration: 1 }, // The moving effect when open the page
                 }
               : "center"
           }
